@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Navbar />
-    
     <!-- Hero Section -->
     <section class="relative h-screen">
       <div class="absolute inset-0">
@@ -108,13 +106,3 @@ onMounted(() => {
   }, 5000)
 })
 </script>
-
-<style scoped>
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.font-opensans {
-  font-family: 'Open Sans', sans-serif;
-}
-</style> 

@@ -49,6 +49,8 @@
 </template>
 
 <script setup lang="ts">
+import MobileMenuIcon from '~/components/icons/MobileMenuIcon.vue'
+
 const isOpen = ref(false)
 
 const menuItems = [
@@ -59,13 +61,3 @@ const menuItems = [
   { name: 'Contact', path: '/contact' }
 ]
 </script>
-
-<style scoped>
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.font-opensans {
-  font-family: 'Open Sans', sans-serif;
-}
-</style> 

@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/ui', '@nuxtjs/tailwindcss'],
+  fonts: {
+    families: [
+      { name: 'Playfair Display', provider: 'google', weights: ['400', '500', '600', '700'] },
+      { name: 'Open Sans', provider: 'google', weights: ['400', '500', '600'] }
+    ]
+  },
   app: {
     head: {
       title: 'Artisan Aperture - Professional Photography',
@@ -15,12 +21,7 @@ export default defineNuxtConfig({
           content: 'Professional photography services including weddings, portraits, and commercial photography.'
         }
       ],
-      link: [
-        { 
-          rel: 'stylesheet', 
-          href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap'
-        }
-      ]
+      link: []
     }
   }
 })
